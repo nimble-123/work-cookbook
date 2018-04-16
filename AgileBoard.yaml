@@ -1,0 +1,110 @@
+[JIRA Board]
+[Master Board]
+[Customer Board]
+[App Board]
+
+[Issue Type Scheme]
+[Master Board Issue Type Scheme]
+[App Board Issue Type Scheme]
+
+[Workflow Scheme]
+[Master Board Workflow Scheme]
+[App Board Workflow Scheme]
+
+[Screen Scheme]
+[Master Board Screen Scheme]
+[App Board Screen Scheme]
+
+[Screen]
+[Create Issue]
+[Edit Issue]
+[View Issue]
+
+[Issue Type]
+[Application{bg:deepskyblue}]
+[Epic{bg:violet}]
+[Story{bg:gold}]
+[New Feature{bg:palegreen}]
+[Change Request{bg:purple}]
+[Task{bg:deepskyblue}]
+[Subtask{bg:deepskyblue}]
+[Bug{bg:crimson}]
+[Problem{bg:crimson}]
+[Kaufen{bg:palegreen}]
+
+[Issue Type Scheme]
+[Master Board Issue Type Scheme]
+[App Board Issue Type Scheme]
+
+[Master Board]->[Customer Board]
+[Customer Board]->[App Board]
+
+[Master Board]->[Screen Scheme]
+[Master Board]->[Workflow Scheme]
+[Master Board]->[Issue Type Scheme]
+
+[App Board]->[Screen Scheme]
+[App Board]->[Workflow Scheme]
+[App Board]->[Issue Type Scheme]
+
+[Master Board Screen Scheme]->[Screen]
+[Master Board Screen Scheme]->[Issue Type]
+[App Board Screen Scheme]->[Screen]
+[App Board Screen Scheme]->[Issue Type]
+
+[Issue Type Scheme]->[Issue Type]
+
+[JIRA Board]^-[Master Board]
+[JIRA Board]^-[Customer Board]
+[JIRA Board]^-[App Board]
+
+[Issue Type]^-[Application]
+[Issue Type]^-[Epic]
+[Issue Type]^-[Story]
+[Issue Type]^-[New Feature]
+[Issue Type]^-[Change Request]
+[Issue Type]^-[Task]
+[Issue Type]^-[Subtask]
+[Issue Type]^-[Bug]
+[Issue Type]^-[Problem]
+[Issue Type]^-[Kaufen]
+
+[Issue Type Scheme]^-[Master Board Issue Type Scheme]
+[Issue Type Scheme]^-[App Board Issue Type Scheme]
+
+[Workflow Scheme]^-[Master Board Workflow Scheme]
+[Workflow Scheme]^-[App Board Workflow Scheme]
+
+[Screen Scheme]^-[Master Board Screen Scheme]
+[Screen Scheme]^-[App Board Screen Scheme]
+
+[Screen]^-[Create Issue]
+[Screen]^-[Edit Issue]
+[Screen]^-[View Issue]
+
+[Confluence Space]
+[Master Space]
+[Customer Space]
+[Page]
+[Title]
+[Content]
+[Requirements]
+[Glossar]
+[Contact Persons]
+[Protocols]
+
+[Master Board]->[Master Space]
+[Customer Board]->[Customer Space]
+[App Board]->[Customer Space]
+
+[Confluence Space]->[Page]
+[Page]->[Title]
+[Page]->[Content]
+
+[Page]^-[Glossar]
+[Page]^-[Requirements]
+[Page]^-[Contact Persons]
+[Page]^-[Protocols]
+
+[Confluence Space]^-[Master Space]
+[Confluence Space]^-[Customer Space]
